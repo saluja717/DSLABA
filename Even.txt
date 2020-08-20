@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int Sum_Even(int arr[],int n)
+{
+     int sum=0;
+     for(int j=0;j<n;j+=2)
+     { 
+         sum=sum+arr[j];
+     }
+     return sum;
+}
+
+int main()
+{
+     int n;
+     cout<<"How many element you want to enter in Array"; 
+     cin>>n;
+     int arr[n];
+     for(int i=0;i<n;i++)
+     {
+        cin>>arr[i];
+     }
+     int sum=Sum_Even(arr,n);
+     cout<<"Sum of Even index Element is-"<<" "<<sum;
+     return 0;
+}
